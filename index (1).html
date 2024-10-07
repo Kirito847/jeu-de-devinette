@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinettes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu de Devinettes</h1>
+        <div id="theme-selection">
+            <h2>Choisis un thème</h2>
+            <button onclick="selectTheme('Animaux')">Animaux</button>
+            <button onclick="selectTheme('Histoire')">Histoire</button>
+            <button onclick="selectTheme('Cinéma')">Cinéma</button>
+            <button onclick="selectTheme('Culture Générale')">Culture Générale</button>
+            <button onclick="selectTheme('Actualité')">Actualité</button>
+        </div>
+        <div id="game-area" class="hidden">
+            <h2 id="theme-title"></h2>
+            <p id="clue"></p>
+            <input type="text" id="answer" placeholder="Ta réponse">
+            <button onclick="checkAnswer()">Valider</button>
+            <p id="feedback"></p>
+            <button onclick="nextQuestion()">Passer à la suivante</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
